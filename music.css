@@ -1,0 +1,305 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+body {
+	background-color: gray;
+	height: 100%;
+}
+.mymusic {
+	background: linear-gradient(
+		to left,
+		rgba(227, 14, 227, 0.5),
+		rgba(214, 0, 214, 0.5),
+		rgba(200, 0, 200, 0.5),
+		rgba(186, 0, 186, 0.5),
+		rgba(172, 0, 172, 0.5),
+		rgba(158, 0, 158, 0.5),
+		rgba(144, 0, 144, 0.5),
+		rgba(130, 0, 130, 0.5),
+		rgba(116, 0, 116, 0.5),
+		rgba(102, 0, 102, 0.5),
+		rgba(88, 0, 88, 0.5),
+		rgba(74, 0, 74, 0.5),
+		rgba(60, 0, 60, 0.5),
+		rgba(46, 0, 46, 0.5),
+		rgba(32, 0, 32, 0.5),
+		rgba(18, 0, 18, 0.5),
+		rgba(4, 0, 4, 0.5)
+	);
+
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	padding: 5px;
+}
+.mymusic a {
+	color: white;
+	text-decoration: none;
+	text-transform: capitalize;
+	font-weight: bold;
+	font-size: 20px;
+
+	padding: 5px 0 5px 0;
+}
+
+.lyrics,
+.lyrics1 {
+	padding: 5px;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 30px;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+.lyrics {
+	background: linear-gradient(
+		to right,
+		rgb(175, 46, 250),
+		rgb(167, 52, 250),
+		rgb(160, 58, 250),
+		rgb(152, 64, 250),
+		rgb(145, 70, 250),
+		rgb(137, 76, 250),
+		rgb(130, 82, 250),
+		rgb(122, 88, 250),
+		rgb(115, 94, 250),
+		rgb(107, 100, 250),
+		rgb(100, 106, 250),
+		rgb(92, 112, 250),
+		rgb(85, 118, 250),
+		rgb(77, 124, 250),
+		rgb(70, 130, 250),
+		rgb(62, 136, 250),
+		rgb(55, 142, 250),
+		rgb(47, 148, 250),
+		rgb(40, 154, 250),
+		rgb(32, 160, 250),
+		rgb(25, 166, 250),
+		rgb(17, 172, 250),
+		rgb(10, 178, 250),
+		rgb(2, 184, 250)
+	);
+}
+.lyrics1 {
+	background: linear-gradient(
+		to right,
+		rgb(175, 46, 250),
+		rgb(168, 50, 250),
+		rgb(161, 54, 250),
+		rgb(154, 58, 250),
+		rgb(147, 62, 250),
+		rgb(140, 66, 250),
+		rgb(133, 70, 250),
+		rgb(126, 74, 250),
+		rgb(119, 78, 250),
+		rgb(112, 82, 250),
+		rgb(105, 86, 250),
+		rgb(98, 90, 250),
+		rgb(91, 94, 250),
+		rgb(84, 98, 250),
+		rgb(77, 102, 250),
+		rgb(70, 106, 250),
+		rgb(63, 110, 250),
+		rgb(56, 114, 250),
+		rgb(49, 118, 250),
+		rgb(42, 122, 250),
+		rgb(35, 126, 250),
+		rgb(28, 130, 250),
+		rgb(21, 134, 250),
+		rgb(14, 138, 250),
+		rgb(7, 142, 250),
+		rgb(0, 126, 250)
+	);
+}
+.check {
+	height: 5px;
+	width: 100%;
+	background-color: white;
+	margin-bottom: 25px;
+	margin: 25px;
+	border-style: dashed;
+}
+.menu {
+	padding: 5px 10px 5px 10px;
+	color: rgb(80, 35, 244);
+	background-color: white;
+	text-decoration: none;
+	text-transform: capitalize;
+	font-weight: bold;
+	border-radius: 10px;
+	width: fit-content;
+	transition: all 0.15s;
+	border: solid 0.5px white;
+}
+.menu:hover {
+	background-color: transparent;
+	color: white;
+}
+/* Add these animations */
+@keyframes slideInLeft {
+	from {
+		transform: translateX(-100%);
+	}
+	to {
+		transform: translateX(0);
+	}
+}
+
+@keyframes slideInRight {
+	from {
+		transform: translateX(100%);
+	}
+	to {
+		transform: translateX(0);
+	}
+}
+
+/* Apply animations to your elements */
+.lyrics,
+.lyrics1 {
+	padding: 5px;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 30px;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	animation-duration: 1s;
+	animation-fill-mode: both;
+}
+
+.lyrics {
+	background: linear-gradient(
+		to right,
+		rgb(175, 46, 250),
+		rgb(167, 52, 250),
+		rgb(160, 58, 250),
+		rgb(152, 64, 250),
+		rgb(145, 70, 250),
+		rgb(137, 76, 250),
+		rgb(130, 82, 250),
+		rgb(122, 88, 250),
+		rgb(115, 94, 250),
+		rgb(107, 100, 250),
+		rgb(100, 106, 250),
+		rgb(92, 112, 250),
+		rgb(85, 118, 250),
+		rgb(77, 124, 250),
+		rgb(70, 130, 250),
+		rgb(62, 136, 250),
+		rgb(55, 142, 250),
+		rgb(47, 148, 250),
+		rgb(40, 154, 250),
+		rgb(32, 160, 250),
+		rgb(25, 166, 250),
+		rgb(17, 172, 250),
+		rgb(10, 178, 250),
+		rgb(2, 184, 250)
+	);
+	animation-name: slideInLeft;
+}
+
+.lyrics1 {
+	background: linear-gradient(
+		to right,
+		rgb(175, 46, 250),
+		rgb(168, 50, 250),
+		rgb(161, 54, 250),
+		rgb(154, 58, 250),
+		rgb(147, 62, 250),
+		rgb(140, 66, 250),
+		rgb(133, 70, 250),
+		rgb(126, 74, 250),
+		rgb(119, 78, 250),
+		rgb(112, 82, 250),
+		rgb(105, 86, 250),
+		rgb(98, 90, 250),
+		rgb(91, 94, 250),
+		rgb(84, 98, 250),
+		rgb(77, 102, 250),
+		rgb(70, 106, 250),
+		rgb(63, 110, 250),
+		rgb(56, 114, 250),
+		rgb(49, 118, 250),
+		rgb(42, 122, 250),
+		rgb(35, 126, 250),
+		rgb(28, 130, 250),
+		rgb(21, 134, 250),
+		rgb(14, 138, 250),
+		rgb(7, 142, 250),
+		rgb(0, 126, 250)
+	);
+	animation-name: slideInRight;
+}
+
+/* Add this class to elements that you want to animate on scroll */
+.animate-on-scroll {
+	opacity: 0;
+	animation-duration: 1s;
+	animation-fill-mode: both;
+}
+
+/* Define when the animation should start */
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+/* You can adjust the animation to your preferences */
+.play {
+	height: 50%;
+	color: rgb(150, 0, 150);
+	font-size: 20px;
+	text-transform: capitalize;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	background-color: white;
+	border: solid 0.5px white;
+	border-radius: 50px;
+	padding: 5px 10px 5px 10px;
+	transition: all 0.1s;
+	font-weight: bold;
+}
+.play:hover {
+	transform: scale(1.05);
+	color: white;
+	background-color: transparent;
+}
+.play img {
+	width: 40px;
+	height: 100%;
+}
+.choice {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 5px 10px 5px;
+}
+.choice:hover {
+	transition: all 0.2s;
+	background-color: rgba(238, 158, 246, 0.8);
+	color: rgb(192, 0, 192);
+	transform: scale(1.005);
+}
+#myAudio {
+	display: none;
+}
