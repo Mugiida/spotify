@@ -3,983 +3,182 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>musica</title>
-		<link rel="stylesheet" href="music.css" />
-		<link rel="icon" type="image/jpg" href="icons/spotify.png" />
-		<script src="main.js"></script>
+		<title>Download Outer Banks Season 1 - 1080p</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		/>
+		<style>
+			:root {
+				--primary: #ff5f1f; /* OBX orange */
+				--dark: #0a1828; /* Dark blue */
+				--light: #f5f5f5;
+				--accent: #00b4d8;
+			}
+
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+				font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+			}
+
+			body {
+				background-color: var(--dark);
+				color: var(--light);
+				min-height: 100vh;
+				display: flex;
+				flex-direction: column;
+			}
+
+			.container {
+				max-width: 800px;
+				margin: 0 auto;
+				padding: 2rem;
+				text-align: center;
+				flex: 1;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+			}
+
+			.logo {
+				font-size: 2.5rem;
+				font-weight: 800;
+				margin-bottom: 1rem;
+				background: linear-gradient(45deg, #ff5f1f, #ff9a3c);
+				-webkit-background-clip: text;
+				background-clip: text;
+				color: transparent;
+			}
+
+			.poster {
+				width: 100%;
+				max-width: 400px;
+				border-radius: 12px;
+				box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+				margin: 2rem auto;
+				border: 4px solid rgba(255, 255, 255, 0.1);
+			}
+
+			h1 {
+				font-size: 2.2rem;
+				margin-bottom: 1rem;
+				line-height: 1.2;
+			}
+
+			.info {
+				display: flex;
+				justify-content: center;
+				gap: 1.5rem;
+				margin: 1rem 0 2rem;
+				flex-wrap: wrap;
+			}
+
+			.info-item {
+				display: flex;
+				align-items: center;
+				gap: 0.5rem;
+				font-size: 0.9rem;
+				color: rgba(255, 255, 255, 0.8);
+			}
+
+			.download-btn {
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				gap: 0.8rem;
+				padding: 1.2rem 2.5rem;
+				background: linear-gradient(45deg, #ff5f1f, #ff9a3c);
+				color: white;
+				border: none;
+				border-radius: 50px;
+				font-size: 1.2rem;
+				font-weight: 600;
+				cursor: pointer;
+				transition: all 0.3s ease;
+				box-shadow: 0 10px 30px rgba(255, 95, 31, 0.3);
+				margin: 1rem 0;
+				text-decoration: none;
+			}
+
+			.download-btn:hover {
+				transform: translateY(-3px);
+				box-shadow: 0 15px 40px rgba(255, 95, 31, 0.4);
+			}
+
+			.quality-badge {
+				background-color: var(--accent);
+				color: var(--dark);
+				padding: 0.3rem 1rem;
+				border-radius: 50px;
+				font-size: 0.9rem;
+				font-weight: 700;
+				margin-left: 0.5rem;
+			}
+
+			.file-info {
+				margin-top: 1.5rem;
+				color: rgba(255, 255, 255, 0.6);
+				font-size: 0.9rem;
+			}
+
+			footer {
+				text-align: center;
+				padding: 1.5rem;
+				color: rgba(255, 255, 255, 0.5);
+				font-size: 0.8rem;
+			}
+
+			@media (max-width: 600px) {
+				.container {
+					padding: 1.5rem;
+				}
+
+				.logo {
+					font-size: 2rem;
+				}
+
+				h1 {
+					font-size: 1.8rem;
+				}
+
+				.download-btn {
+					padding: 1rem 2rem;
+					font-size: 1.1rem;
+				}
+			}
+		</style>
 	</head>
 	<body>
-		<div id="menu" class="mymusic">
-			<div class="choice">
-				<a href="#hynm">hynm for the weekend</a
-				><button class="play" onclick="playSong('hynm')">
-					<img src="icons/play-removebg-preview.png" alt="" />play
-				</button>
+		<div class="container">
+			<div class="logo">SKON Downloads</div>
+			<img src="outer.jpg" alt="Outer Banks Season 1" class="poster" />
+
+			<h1>Outer Banks: <span style="color: var(--primary)">Season 1</span></h1>
+
+			<div class="info">
+				<div class="info-item"><i class="fas fa-film"></i> 10 Episodes</div>
+				<div class="info-item"><i class="fas fa-clock"></i> 50min avg</div>
+				<div class="info-item"><i class="fas fa-calendar"></i> 2020</div>
 			</div>
-			<div class="choice">
-				<a href="#duvet">duvet</a
-				><button class="play" onclick="playSong('duvet')">
-					<img src="icons/play-removebg-preview.png" alt="" />play
-				</button>
+
+			<a href="" class="download-btn">
+				<i class="fas fa-download"></i> Download All Episodes
+				<span class="quality-badge">1080p</span>
+			</a>
+
+			<div class="file-info">
+				<p>
+					<i class="fas fa-database"></i> Total Size: ~4.5GB |
+					<i class="fas fa-file-archive"></i> ZIP Format
+				</p>
+				<p><i class="fas fa-bolt"></i> High Speed Download</p>
 			</div>
-			<div class="choice">
-				<a href="#new">A new kind of love</a
-				><button class="play" onclick="playSong('new')">
-					<img src="icons/play-removebg-preview.png" alt="" />play
-				</button>
-			</div>
-			<div class="choice">
-				<a href="#bring">bring me to life</a
-				><button class="play" onclick="playSong('bring')">
-					<img src="icons/play-removebg-preview.png" alt="" />play
-				</button>
-			</div>
-			<div class="choice">
-				<a href="#royalty">royalty</a
-				><button class="play" onclick="playSong('royalty')">
-					<img src="icons/play-removebg-preview.png" alt="" />play
-				</button>
-			</div>
-			<div class="choice">
-				<a href="#viva">viva la vida</a
-				><button class="play" onclick="playSong('viva')">
-					<img src="icons/play-removebg-preview.png" alt="" />play
-				</button>
-			</div>
-			<div class="choice">
-				<a href="#lost">lost on you</a
-				><button class="play" onclick="playSong('lost')">
-					<img src="icons/play-removebg-preview.png" alt="" />play
-				</button>
-			</div>
-			<div class="choice">
-				<a href="#afraid">not afraid</a
-				><button class="play" onclick="playSong('afraid')">
-					<img src="icons/play-removebg-preview.png" alt="" />play
-				</button>
-			</div>
-			<div class="choice">
-				<a href="#demons">demons</a
-				><button class="play" onclick="playSong('demons')">
-					<img src="icons/play-removebg-preview.png" alt="" />play
-				</button>
-			</div>
-			<div class="choice">
-				<a href="#wavin">wavin flag</a
-				><button class="play" onclick="playSong('wavin')">
-					<img src="icons/play-removebg-preview.png" alt="" />play
-				</button>
-			</div>
-			<div class="choice">
-				<a href="#daddy">hey daddy</a
-				><button class="play" onclick="playSong('daddy')">
-					<img src="icons/play-removebg-preview.png" alt="" />play
-				</button>
-			</div>
-			<div class="choice">
-				<a href="#streams">streams</a
-				><button class="play" onclick="playSong('streams')">
-					<img src="icons/play-removebg-preview.png" alt="" />play
-				</button>
-			</div>
-		</div>
-		<div class="lyrics" id="hynm">
-			Me, drink from me, drink from me (oh I-)<br />
-			Shoot across the symphony (oh I-, oh I-) <br />
-			That we shoot across the sky<br />
-			Drink from me, drink from me (I-, oh I-, oh I-)<br />
-			That we shoot across the (I'm feeling drunk and high)<br />
-			Symphony<br />
-			(So high, so high) <br />
-			That we shoot across the s- (drink from) <br />
-			Oh, angel sent from up above <br />
-			You know you make my world light up <br />
-			When I was down, when I was hurt <br />
-			You came to lift me up <br />
-			Life is a drink and love's a drug<br />
-			Oh, now I think I must be miles up<br />
-			When I was a river, dried up<br />
-			You came to rain a flood<br />
-			You said, "Drink from me, drink from me"<br />
-			When I was so thirsty<br />
-			Pour on a symphony<br />
-			Now I just can't get enough<br />
-			Put your wings on me, wings on me<br />
-			When I was so heavy<br />
-			Pour on a symphony<br />
-			When I'm low, low, low, low<br />
-			I-, oh I-, oh I-<br />
-			Got me feeling drunk and high<br />
-			So high (so high), so high (so high)<br />
-			Oh I-, oh I-, oh I-<br />
-			Now I'm feeling drunk and high<br />
-			So high (so high), so high (so high)<br />
-			(Woo)<br />
-			(Ooh) Oh, angel sent from up above<br />
-			I feel you coursing through my blood<br />
-			Life is a drink, your love's about<br />
-			To make the stars come out<br />
-			Put your wings on me, wings on me<br />
-			When I was so heavy<br />
-			Pour on a symphony<br />
-			When I'm low, low, low, low<br />
-			I-, oh I-, oh I-<br />
-			Got me feeling drunk and high<br />
-			So high, so high (so high)<br />
-			Oh I-, oh I-, oh I-<br />
-			Now I'm feeling drunk and high<br />
-			So high (so high), so high (so high)<br />
-			I-, oh I-, oh I-<br />
-			La, la, la, la, la, la, la<br />
-			So high, so high<br />
-			I-, oh I-, oh I-<br />
-			Now I'm feeling drunk and high<br />
-			So high (so high), so high (so high)<br />
-			That we shoot across the sky<br />
-			That we shoot across the<br />
-			That we shoot across the sky<br />
-			That we shoot across the (that we shoot, yeah)<br />
-			That we shoot across the sky<br />
-			That we shoot across the<br />
-			That we shoot across the sky<br />
-			That we shoot across the <br />
-			<a class="menu" href="#menu">return</a>
-			<div class="check"></div>
-		</div>
-		<div class="lyrics1" id="duvet">
-			And you don't seem to understand<br />
-			A shame you seemed an honest man<br />
-			And all the fears you hold so dear<br />
-			Will turn to whisper in your ear<br />
-			And you know what they say might hurt you<br />
-			And you know that it means so much<br />
-			And you don't even feel a thing<br />
-			I am falling, I am fading<br />
-			I have lost it all<br />
-			And you don't seem the lying kind<br />
-			A shame that I can read your mind<br />
-			And all the things that I read there<br />
-			Candlelit smile that we both share<br />
-			And you know I don't mean to hurt you<br />
-			But you know that it means so much<br />
-			And you don't even feel a thing<br />
-			I am falling, I am fading, I am drowning<br />
-			Help me to breathe<br />
-			I am hurting, I have lost it all<br />
-			I am losing<br />
-			Help me to breathe<br />
-			I am falling, I am failing, I am drowning<br />
-			Help me to breathe<br />
-			I am hurting, I have lost it all<br />
-			I am losing<br />
-			Help me to breathe<br />
-			Oh-oh, yeah<br />
-			Oh-oh-oh-oh, yeah<br />
-			I am falling, I am failing, I am drowning<br />
-			Help me to breathe<br />
-			I am hurting, I have lost it all<br />
-			I am losing<br />
-			Help me to breathe <br /><a class="menu" href="#menu">return</a>
-			<div class="check"></div>
 		</div>
 
-		<div class="lyrics" id="new">
-			Oh uh oh na na<br />
-			Oh uh oh<br />
-			Oh uh oh na na<br />
-			Oh uh oh<br />
-			Oh uh oh na na<br />
-			Oh uh oh<br />
-			A new kind of love<br />
-			Genetically altered<br />
-			Enough of "Love Lite"<br />
-			And "I Can't Believe It's Not Love!"<br />
-			I can't help myself<br />
-			And you don't have to say that<br />
-			"It sparks across flesh<br />
-			You'll feel it kicking in soon"<br />
-			Are you falling in love?<br />
-			I've a feeling you are<br />
-			Are you falling in love<br />
-			With a feeling?<br />
-			Oh uh oh na na<br />
-			Oh uh oh<br />
-			Oh uh oh na na<br />
-			Oh uh oh<br />
-			So you're running late<br />
-			And it's not even like you<br />
-			You were doing so well<br />
-			Did the dog eat your homework again?<br />
-			I can't help myself (oh uh oh)<br />
-			'Cause my friend says, "in real life<br />
-			It's only the police (oh uh oh)<br />
-			That ever come looking for you"<br />
-			Are you falling in love?<br />
-			I've a feeling you are<br />
-			Are you falling in love<br />
-			With a feeling?<br />
-			Are you falling in love<br />
-			Or only feeling you are?<br />
-			'Cause if you're falling in love<br />
-			Let me feel it<br />
-			I've been busy<br />
-			You know that<br />
-			You know you're just saying that<br />
-			Are you going to get that?<br />
-			What's that supposed to mean?<br />
-			I've been busy, you know that<br />
-			You know you're just saying that<br />
-			Are you going to get that?<br />
-			What's that supposed to mean?<br />
-			Are you falling in love?<br />
-			I've a feeling you are<br />
-			Are you falling in love<br />
-			With a feeling?<br />
-			Are you falling in love<br />
-			Or only feeling you are?<br />
-			'Cause if you're falling in love<br />
-			Let me feel it (oh uh oh na na, oh uh oh)<br />
-			Let me feel it (oh uh oh na na, oh uh oh)<br />
-			Let me feel it (oh uh oh na na, oh uh oh)<br />
-			Let me feel it (oh uh oh na na, oh uh oh)<br />
-			Let me feel it (oh uh oh na na, oh uh oh)<br />
-			Let me feel it (oh uh oh na na, oh uh oh)<br />
-			Let me feel it (oh uh oh na na, oh uh oh)<br />
-			Let me feel it (oh uh oh na na, oh uh oh)<br />
-			<a class="menu" href="#menu">return</a>
-			<div class="check"></div>
-		</div>
-		<div class="lyrics" id="waving-flag">
-			When I get older,<br />
-			I will be stronger,<br />
-			They'll call me "Freedom",<br />
-			Just like a wavin' flag.<br />
-			<br />
-			When I get older,<br />
-			I will be stronger,<br />
-			They'll call me "Freedom",<br />
-			Just like a wavin' flag.<br />
-			<br />
-			And then it goes back.<br />
-			And then it goes back.<br />
-			And then it goes back.<br />
-			<br />
-			Born to a throne<br />
-			Stronger than Rome,<br />
-			But violent-prone.<br />
-			Poor people zone.<br />
-			<br />
-			But it's my home.<br />
-			All I have known.<br />
-			Where I got grown.<br />
-			Streets we would roam.<br />
-			<br />
-			Out of the darkness,<br />
-			I came the farthest<br />
-			Among the hardest survival.<br />
-			<br />
-			Learn from these streets.<br />
-			It can be bleak.<br />
-			Accept no defeat.<br />
-			Surrender retreat.<br />
-			<br />
-			So we strugglin',<br />
-			Fightin' to eat.<br />
-			And we wonderin'<br />
-			When we'll be free.<br />
-			<br />
-			So, we patiently wait<br />
-			For that fateful day.<br />
-			It's not far away,<br />
-			But for now we say,<br />
-			<br />
-			When I get older,<br />
-			I will be stronger,<br />
-			They'll call me "Freedom",<br />
-			Just like a wavin' flag.<br />
-			<br />
-			And then it goes back.<br />
-			And then it goes back.<br />
-			And then it goes back.<br />
-			<br />
-			So many wars.<br />
-			Settlin' scores.<br />
-			Bringing us promises.<br />
-			Leaving us poor.<br />
-			<br />
-			I heard them say,<br />
-			"Love is the way.<br />
-			Love is the answer."<br />
-			That's what they say.<br />
-			<br />
-			But look how they treat us.<br />
-			Make us believers.<br />
-			We fight their battles,<br />
-			Then they deceive us.<br />
-			<br />
-			Try to control us.<br />
-			They couldn't hold us<br />
-			'Cause we just move forward<br />
-			Like Buffalo soldiers.<br />
-			<br />
-			But we strugglin',<br />
-			Fightin' to eat.<br />
-			And we wonderin'<br />
-			When we'll be free.<br />
-			<br />
-			So we patiently wait<br />
-			For that fateful day.<br />
-			It's not far away,<br />
-			But for now we say,<br />
-			<br />
-			When I get older,<br />
-			I will be stronger,<br />
-			They'll call me "Freedom",<br />
-			Just like a wavin' flag.<br />
-			<br />
-			And then it goes back.<br />
-			And then it goes back.<br />
-			And then it goes back.<br />
-			And then it goes...<br />
-			<br />
-			When I get older,<br />
-			I will be stronger,<br />
-			They'll call me "Freedom",<br />
-			Just like a wavin' flag.<br />
-			<br />
-			And then it goes back.<br />
-			And then it goes back.<br />
-			And then it goes back.<br />
-			And then it goes...<br />
-			<br />
-			And then it goes...<br />
-			<br />
-			And everybody will be singing it.<br />
-			And you and I will be singing it.<br />
-			And we all will be singing it.<br />
-			<br />
-			When I get older,<br />
-			I will be stronger,<br />
-			They'll call me "Freedom",<br />
-			Just like a wavin' flag.<br />
-			<br />
-			And then it goes back.<br />
-			And then it goes back.<br />
-			And then it goes back.<br />
-			And then it goes...<br />
-			<br />
-			When I get older,<br />
-			I will be stronger,<br />
-			They'll call me "Freedom",<br />
-			Just like a wavin' flag.<br />
-			<br />
-			And then it goes back.<br />
-			And then it goes back.<br />
-			And then it goes back.<br />
-			<br />
-			When I get older,<br />
-			When I get older,<br />
-			I will be stronger,<br />
-			Just like a wavin' flag.<br />
-			<br />
-			Just like a wavin' flag.<br />
-			Just like a wavin' flag, flag, flag.<br />
-			Just like a wavin' flag.<br />
-			<a class="menu" href="#menu">return</a>
-			<div class="check"></div>
-		</div>
-		<div class="lyrics1" id="demons">
-			When the days are cold<br />
-			And the cards all fold<br />
-			And the saints we see are all made of gold<br />
-			When your dreams all fail<br />
-			And the ones we hail<br />
-			Are the worst of all, and the blood's run stale<br />
-			I wanna hide the truth<br />
-			I wanna shelter you<br />
-			But with the beast inside<br />
-			There's nowhere we can hide<br />
-			No matter what we breed<br />
-			We still are made of greed<br />
-			This is my kingdom come<br />
-			This is my kingdom come<br />
-			When you feel my heat, look into my eyes<br />
-			It's where my demons hide<br />
-			It's where my demons hide<br />
-			Don't get too close, it's dark inside<br />
-			It's where my demons hide<br />
-			It's where my demons hide<br />
-			At the curtain's call<br />
-			It's the last of all<br />
-			When the lights fade out, all the sinners crawl<br />
-			So they dug your grave<br />
-			And the masquerade<br />
-			Will come calling out at the mess you've made<br />
-			Don't wanna let you down<br />
-			But I am hell-bound<br />
-			Though this is all for you<br />
-			Don't wanna hide the truth<br />
-			No matter what we breed<br />
-			We still are made of greed<br />
-			This is my kingdom come<br />
-			This is my kingdom come<br />
-			When you feel my heat, look into my eyes<br />
-			It's where my demons hide<br />
-			It's where my demons hide<br />
-			Don't get too close, it's dark inside<br />
-			It's where my demons hide<br />
-			It's where my demons hide<br />
-			They say it's what you make<br />
-			I say it's up to fate<br />
-			It's woven in my soul<br />
-			I need to let you go<br />
-			Your eyes, they shine so bright<br />
-			I wanna save that light<br />
-			I can't escape this now<br />
-			Unless you show me how<br />
-			When you feel my heat, look into my eyes<br />
-			It's where my demons hide<br />
-			It's where my demons hide<br />
-			Don't get too close, it's dark inside<br />
-			It's where my demons hide<br />
-			It's where my demons hide<br />
-			<a class="menu" href="#menu">return</a>
-			<div class="check"></div>
-		</div>
-		<div class="lyrics" id="not_afraid">
-			I'm not afraid (I'm not afraid)<br />
-			Yeah<br />
-			To take a stand (to take a stand)<br />
-			It's been a ride<br />
-			Everybody (everybody)<br />
-			I guess I had to go to that place<br />
-			Come take my hand (come take my hand)<br />
-			To get to this one<br />
-			We'll walk this road together, through the storm<br />
-			Now some of you might still be in that place<br />
-			Whatever weather, cold or warm<br />
-			If you're tryna get out (just lettin' you know that you're not alone)<br />
-			Just follow me (holla if you feel like you've been down the same road)<br />
-			I'll get you there<br />
-			You can try and read my lyrics off of this paper before I lay 'em<br />
-			But you won't take the sting out these words before I say 'em<br />
-			'Cause ain't no way I'ma let you stop me from causin' mayhem<br />
-			When I say I'm a do somethin', I do it<br />
-			I don't give a damn what you think<br />
-			I'm doin' this for me, so fuck the world, feed it beans<br />
-			It's gassed up, if it thinks it's stoppin' me<br />
-			I'ma be what I set out to be, without a doubt, undoubtedly<br />
-			And all those who look down on me, I'm tearin' down your balcony<br />
-			No if, ands or buts, don't try to ask him why or how can he<br />
-			From "Infinite" down to the last "Relapse" album he's still shittin'<br />
-			Whether he's on salary, paid hourly, until he bows out or he shits his
-			bowels out of him<br />
-			Whichever comes first, for better or worse<br />
-			He's married to the game, like a fuck you for Christmas<br />
-			His gift is a curse, forget the Earth, he's got the urge to pull his dick
-			from the dirt<br />
-			And fuck the whole universe<br />
-			I'm not afraid (I'm not afraid)<br />
-			To take a stand (to take a stand)<br />
-			Everybody (everybody)<br />
-			Come take my hand come (come take my hand)<br />
-			We'll walk this road together, through the storm<br />
-			Whatever weather, cold or warm<br />
-			Just lettin' you know that you're not alone<br />
-			Holla if you feel like you've been down the same road<br />
-			Okay, quit playin' with the scissors and shit, and cut the crap<br />
-			I shouldn't have to rhyme these words in the rhythm for you to know it's a
-			wrap<br />
-			You said you was king<br />
-			You lied through your teeth, for that, fuck your feelings<br />
-			Instead of gettin' crowned you're gettin' capped, and to the fans<br />
-			I'll never let you down again, I'm back<br />
-			I promise to never go back on that promise<br />
-			In fact, let's be honest, that last "Relapse" CD was eh<br />
-			Perhaps I ran them accents into the ground<br />
-			Relax, I ain't goin' back to that now<br />
-			All I'm tryna say is get back, click-clack, blaow, 'cause I ain't playin'
-			around<br />
-			There's a game called circle and I don't know how<br />
-			I'm way too up to back down<br />
-			But I think I'm still tryna figure this crap out<br />
-			Thought I had it mapped out but I guess I didn't, this fuckin' black
-			cloud<br />
-			Still follows me around but it's time to exercise these demons<br />
-			These muh'fuckers are doin' jumpin' jacks now<br />
-			I'm not afraid (I'm not afraid)<br />
-			To take a stand (to take a stand)<br />
-			Everybody (everybody)<br />
-			Come take my hand come (come take my hand)<br />
-			We'll walk this road together, through the storm<br />
-			Whatever weather, cold or warm<br />
-			Just lettin' you know that you're not alone<br />
-			Holla if you feel like you've been down the same road<br />
-			And I just can't keep living this way<br />
-			So starting today<br />
-			I'm breaking out of this cage<br />
-			I'm standing up, I'ma face my demons<br />
-			I'm manning up, I'ma hold my ground<br />
-			I've had enough, now I'm so fed up<br />
-			Time to put my life back together right now (now)<br />
-			It was my decision to get clean, I did it for me<br />
-			Admittedly, I probably did it subliminally for you<br />
-			So I could come back a brand new me, you helped see me through<br />
-			And don't realize what you did, ('cause) believe me you<br />
-			I been through the wringer, but they could do little to the middle
-			finger<br />
-			I think I got a tear in my eye, I feel like the king of<br />
-			My world, haters can make like bees with no stingers and drop dead<br />
-			No more beef lingers, no more drama from now on<br />
-			I promise to focus solely on handlin' my responsibilities as a father<br />
-			So I solemnly swear to always treat this roof like my daughters and raise
-			it<br />
-			You couldn't lift a single shingle on it, 'cause the way I feel<br />
-			I'm strong enough to go to the club or the corner pub<br />
-			And lift the whole liquor counter up 'cause I'm raising the bar<br />
-			I'd shoot for the moon but I'm too busy gazin' at stars, I feel amazing
-			and I'm not<br />
-			I'm not afraid (I'm not afraid)<br />
-			To take a stand (to take a stand)<br />
-			Everybody (everybody)<br />
-			Come take my hand come (come take my hand)<br />
-			We'll walk this road together, through the storm<br />
-			Whatever weather, cold or warm<br />
-			Just lettin' you know that you're not alone<br />
-			Holla if you feel like you've been down the same road<br />
-			<a class="menu" href="#menu">return</a>
-			<div class="check"></div>
-		</div>
-		<div class="lyrics1" id="lost">
-			When you get older, plainer, saner<br />
-			Will you remember all the danger<br />
-			We came from?<br />
-			Burning like embers, falling, tender<br />
-			Longing for the days of no surrender<br />
-			Years ago<br />
-			And will you know<br />
-			So smoke 'em if you got 'em<br />
-			Cause it's going down<br />
-			All I ever wanted was you<br />
-			I'll never get to heaven<br />
-			Cause I don't know how<br />
-			Let's raise a glass<br />
-			Or two<br />
-			To all the things I've lost on you<br />
-			Ho, ooh<br />
-			Tell me are they lost on you?<br />
-			Ooh, oh<br />
-			Just that you could cut me loose<br />
-			Ho, ooh<br />
-			After everything I've lost on you<br />
-			Is that lost on you?<br />
-			Hoooooh<br />
-			Ooh, oh<br />
-			Hoooooh<br />
-			Is that lost on you?<br />
-			Hoooooh<br />
-			Ooh, oh<br />
-			Baby, is that lost on you?<br />
-			Is that lost on you?<br />
-			Wishin' I could see the machinations<br />
-			Understand the toil of expectations<br />
-			In your mind<br />
-			Hold me like you never lost your patience<br />
-			Tell me that you love me more than hate me<br />
-			All the time<br />
-			And you're still mine<br />
-			So smoke 'em if you got 'em<br />
-			Cause it's going down<br />
-			All I ever wanted was you<br />
-			Let's take a drink of heaven<br />
-			This can turn around<br />
-			Let's raise a glass<br />
-			Or two<br />
-			To all the things I've lost on you<br />
-			Ho, oh<br />
-			Tell me are they lost on you?<br />
-			Ooh, oh<br />
-			Just that you could cut me loose<br />
-			Ho, oh<br />
-			After everything I've lost on you<br />
-			Is that lost on you?<br />
-			Hoooooh<br />
-			Ooh, oh<br />
-			Hoooooh<br />
-			Is that lost on you?<br />
-			Hoooooh<br />
-			Ooh, oh<br />
-			Baby, is that lost on you?<br />
-			Is that lost on you?<br />
-			Let's raise a glass<br />
-			Or two<br />
-			To all the things I've lost on you<br />
-			Ho, oh<br />
-			Tell me are they lost on you<br />
-			Ooh, oh<br />
-			Just that you could cut me loose<br />
-			Ho, oh<br />
-			After everything I've lost on you<br />
-			Is that lost on you?<br />
-			Is that lost on you?<br />
-			<a class="menu" href="#menu">return</a>
-			<div class="check"></div>
-		</div>
-		<div class="lyrics" id="viva">
-			I used to rule the world<br />
-			Seas would rise when I gave the word<br />
-			Now in the morning, I sleep alone<br />
-			Sweep the streets I used to own<br />
-			<br />
-			I used to roll the dice<br />
-			Feel the fear in my enemy's eyes<br />
-			Listen as the crowd would sing<br />
-			Now the old king is dead, long live the king<br />
-			One minute, I held the key<br />
-			Next the walls were closed on me<br />
-			And I discovered that my castles stand<br />
-			Upon pillars of salt and pillars of sand<br />
-			<br />
-			I hear Jerusalem bells a-ringin'<br />
-			Roman Cavalry choirs are singin'<br />
-			Be my mirror, my sword and shield<br />
-			My missionaries in a foreign field<br />
-			For some reason, I can't explain<br />
-			Once you'd gone, there was never, never an honest word<br />
-			And that was when I ruled the world<br />
-			<br />
-			It was a wicked and wild wind<br />
-			Blew down the doors to let me in<br />
-			Shattered windows and the sound of drums<br />
-			People couldn't believe what I'd become<br />
-			Revolutionaries wait<br />
-			For my head on a silver plate<br />
-			Just a puppet on a lonely string<br />
-			Aw, who would ever wanna be king?<br />
-			<br />
-			I hear Jerusalem bells a-ringin'<br />
-			Roman Cavalry choirs are singing<br />
-			Be my mirror, my sword and shield<br />
-			My missionaries in a foreign field<br />
-			For some reason, I can't explain<br />
-			I know Saint Peter won't call my name<br />
-			Never an honest word<br />
-			But that was when I ruled the world<br />
-			<br />
-			Oh-oh-oh, oh-oh, oh<br />
-			Oh-oh-oh, oh-oh, oh<br />
-			Oh-oh-oh, oh-oh, oh<br />
-			Oh-oh-oh, oh-oh, oh<br />
-			Oh-oh-oh, oh-oh, oh<br />
-			<br />
-			I hear Jerusalem bells a-ringin'<br />
-			Roman Cavalry choirs are singin'<br />
-			Be my mirror, my sword and shield<br />
-			My missionaries in a foreign field<br />
-			For some reason I can't explain<br />
-			I know Saint Peter won't call my name<br />
-			Never an honest word<br />
-			But that was when I ruled the world<br />
-			<a class="menu" href="#menu">return</a>
-			<div class="check"></div>
-		</div>
-		<div class="lyrics1" id="royalty">
-			Say I'm cold-hearted<br />
-			But I'm just getting started<br />
-			Got my eyes on the target<br />
-			Now, now<br />
-			Ohh, ohh, ohh<br />
-			'Til the battle's won<br />
-			'Til kingdom come<br />
-			Ohh, ohh, ohh<br />
-			I'll never run<br />
-			Best to give me your loyalty<br />
-			'Cause I'm taking the world, you'll see<br />
-			They'll be calling me, calling me<br />
-			They'll be calling me royalty<br />
-			Best to give me your loyalty<br />
-			'Cause I'm taking the world, you'll see<br />
-			They'll be calling me, calling me<br />
-			They'll be calling me royalty<br />
-			They'll be calling me royalty<br />
-			They say I'm dangerous 'cause I<br />
-			Broke all their cages<br />
-			No, I, won't sit and take it<br />
-			Now, now<br />
-			They left me for dead, I guess they'll never learn<br />
-			Every time I break there's just more pain to burn<br />
-			They'll never, never, never learn<br />
-			Ohh, ohh, ohh<br />
-			'Til the battle's won<br />
-			'Til kingdom come<br />
-			Ohh, ohh, ohh<br />
-			I'll never run<br />
-			Best to give me your loyalty<br />
-			'Cause I'm taking the world, you'll see<br />
-			They'll be calling me, calling me<br />
-			They'll be calling me royalty<br />
-			Best to give me your loyalty<br />
-			'Cause I'm taking the world, you'll see<br />
-			They'll be calling me, calling me<br />
-			They'll be calling me royalty<br />
-			They'll be calling me royalty<br />
-			They'll be calling me royalty<br />
-			They'll be calling me royalty<br />
-			<a class="menu" href="#menu">return</a>
-			<div class="check"></div>
-		</div>
-		<div class="lyrics" id="bring">
-			How can you see into my eyes like open doors?<br />
-			Leading you down into my core where I've become so numb<br />
-			Without a soul my spirit's sleeping somewhere cold<br />
-			Until you find it there and lead it back home<br />
-			<br />
-			(Wake me up)<br />
-			Wake me up inside<br />
-			(I can't wake up)<br />
-			Wake me up inside<br />
-			(Save me)<br />
-			Call my name and save me from the dark<br />
-			(Wake me up)<br />
-			Bid my blood to run<br />
-			(I can't wake up)<br />
-			Before I come undone<br />
-			(Save me)<br />
-			Save me from the nothing I've become<br />
-			<br />
-			Now that I know what I'm without<br />
-			You can't just leave me<br />
-			Breathe into me and make me real<br />
-			Bring me to life<br />
-			<br />
-			(Wake me up)<br />
-			Wake me up inside<br />
-			(I can't wake up)<br />
-			Wake me up inside<br />
-			(Save me)<br />
-			Call my name and save me from the dark<br />
-			(Wake me up)<br />
-			Bid my blood to run<br />
-			(I can't wake up)<br />
-			Before I come undone<br />
-			(Save me)<br />
-			Save me from the nothing I've become<br />
-			<br />
-			Bring me to life<br />
-			(I've been living a lie, there's nothing inside)<br />
-			Bring me to life<br />
-			<br />
-			Frozen inside without your touch<br />
-			Without your love, darling<br />
-			Only you are the life among the dead<br />
-			<br />
-			All this time I can't believe I couldn't see<br />
-			Kept in the dark but you were there in front of me<br />
-			I've been sleeping a thousand years it seems<br />
-			Got to open my eyes to everything<br />
-			Without a thought, without a voice, without a soul<br />
-			Don't let me die here<br />
-			There must be something more<br />
-			Bring me to life<br />
-			<br />
-			(Wake me up)<br />
-			Wake me up inside<br />
-			(I can't wake up)<br />
-			Wake me up inside<br />
-			(Save me)<br />
-			Call my name and save me from the dark<br />
-			(Wake me up)<br />
-			Bid my blood to run<br />
-			(I can't wake up)<br />
-			Before I come undone<br />
-			(Save me)<br />
-			Save me from the nothing I've become<br />
-			<br />
-			Bring me to life<br />
-			(I've been living a lie, there's nothing inside)<br />
-			Bring me to life<br />
-			<a class="menu" href="#menu">return</a>
-			<div class="check"></div>
-		</div>
-		<div class="lyrics1" id="streams">
-			كُنّا كي الألماس ع تاج البيّ<br />
-			اللّي كیف تراه یجھربالضّي<br />
-			لین طوانا البُعد<br />
-			و ظلام اللّیل كسِّر الڤازات<br />
-			و كانُوا النّاس بين النّعسات<br />
-			يحلمُو بالدّار عمرت و ضوات<br />
-			راجعين جايبين يا دُوب طريڤ<br />
-			تُغزر للّي فات<br />
-			____<br />
-			اه يا صفوة بالي<br />
-			اه يا ساكن في بالي<br />
-			علّي صار ، علّي صار<br />
-			نحكيو علّي فات<br />
-			​___<br />
-			كانت البیبان مِليانة تصاور<br />
-			تُدخل كیف المحبّة ما غیر ما تشاور<br />
-			حتى لیالي الشرش و صوت الرِّيح ما طفّاش النجمات​​​​​<br />
-			الفنجان یدور و الرّنج یعترق<br />
-			و الخیر في القلوب مجمول معتّق<br />
-			و الأيّام تِطوال و الدّهشة تزید و تُكثر الحكايات<br />
-			​​​​​​​​​___<br />
-			اه يا صفوة بالي<br />
-			اه يا ساكن في بالي<br />
-			علّي صار ، علّي صار<br />
-			نحكيو علّي فات<br />
-			___<br />
-			Sometimes I move I groove<br />
-			Sometimes I chill<br />
-			Some people want me lose<br />
-			I'm here am fill<br />
-			My homie buy me weed<br />
-			I'm high ass hell<br />
-			I'm high ass hell<br />
-			I'm high ass hell<br />
-			Sometimes I move I groove<br />
-			Sometimes I chill baby<br />
-			Some people want me lose<br />
-			I'm here am fill<br />
-			My homie buy me weed<br />
-			I'm high as hell<br />
-			I'm high as hell<br />
-			I'm high as hell<br />
-			Ay<br />
-			My flow so well you know me well<br />
-			My people sell .. they want me killed<br />
-			I got some skills<br />
-			I got some skills<br />
-			Make you think again about me<br />
-			I see some shit around me<br />
-			Right there my self without me<br />
-			I got more than pain inside me<br />
-			I got more than pain check my name<br />
-			نحبش نركش مع البهايم<br />
-			People they acting all the same<br />
-			I got my voice .. I got my thing<br />
-			I'm leaving am not the same<br />
-			Tryna fix my brain<br />
-			I just looking for some change<br />
-			But you can't complain<br />
-			Sure y'all<br />
-			I just want you I need you<br />
-			And the sun go down yeah<br />
-			I don't want you fallin' and calling<br />
-			Baby leave my mind yeah<br />
-			I was always showing and teaching<br />
-			How you want me now yeah<br />
-			I was always thinking about LOVE<br />
-			Thinking about surprise yeah<br />
-			Sometimes I'm bad ( Sometimes I'm bad )<br />
-			Other times I'm great ( Other times I'm great )<br />
-			Sometimes I'm thinking about decision how you want me babe<br />
-			yeah yeah<br />
-			Sometimes I'm bad <br />
-			Sometimes I'm .. great <br />
-			Sometimes I'm thinking about decision how you want me babe<br />
-			yeah yeah<br />
-			_____<br />
-			بصت في القصة و ما تخافش سربيني و سايس خوك<br />
-			نعرف لي العِشرة ما تراكش وقتلي تكون مخنوق<br />
-			كلام ليل و شواطن تتناقش حب خوك لي صان الخلوق<br />
-			طلبتو في غصرة و ما جاكش<br />
-			سلو و تو تعيش مسرور<br />
-			وقيت شتنط السور<br />
-			و تخدم كي الموتور<br />
-			سطر مستقبل يضحكلك ما تكون إنسان مضرور<br />
-			وقيت شتجس الجمرة<br />
-			وحدك لي تمس القمرة<br />
-			كراوك ما حبتك تتبهنس يحبوك راكب عالحمرة<br />
-			Ayy yeah<br />
-			بلادي لي تحب تحكيلي متخرج ما نلقاش مصروف<br />
-			دولة ما تحب تمشيلي<br />
-			تتكيف زيد بيع طروف<br />
-			عشيري سلو و ادعيلي في مجلس دارت كفوف<br />
-			نقص مالحس نحيلي كا الروبة راني نعشق بوس<br />
-			بلادي لي تحب تحكيلي متخرج ما نلقاش مصروف<br />
-			دولة ما تحب تمشيلي<br />
-			تتكيف زيد بيع طروف<br />
-			عشيري سلو و ادعيلي في مجلس دارت كفوف<br />
-			نقص مالحس نحيلي كا الروبة راني نعشق بوس<br />
-			<a class="menu" href="#menu">return</a>
-			<div class="check"></div>
-		</div>
-		<div class="lyrics1" id="bring">
-			How can you see into my eyes like open doors?<br />
-			Leading you down into my core where I've become so numb<br />
-			Without a soul my spirit's sleeping somewhere cold<br />
-			Until you find it there and lead it back home<br />
-			<br />
-			(Wake me up)<br />
-			Wake me up inside<br />
-			(I can't wake up)<br />
-			Wake me up inside<br />
-			(Save me)<br />
-			Call my name and save me from the dark<br />
-			(Wake me up)<br />
-			Bid my blood to run<br />
-			(I can't wake up)<br />
-			Before I come undone<br />
-			(Save me)<br />
-			Save me from the nothing I've become<br />
-			<br />
-			Now that I know what I'm without<br />
-			You can't just leave me<br />
-			Breathe into me and make me real<br />
-			Bring me to life<br />
-			<br />
-			(Wake me up)<br />
-			Wake me up inside<br />
-			(I can't wake up)<br />
-			Wake me up inside<br />
-			(Save me)<br />
-			Call my name and save me from the dark<br />
-			(Wake me up)<br />
-			Bid my blood to run<br />
-			(I can't wake up)<br />
-			Before I come undone<br />
-			(Save me)<br />
-			Save me from the nothing I've become<br />
-			<br />
-			Bring me to life<br />
-			(I've been living a lie, there's nothing inside)<br />
-			Bring me to life<br />
-			<br />
-			Frozen inside without your touch<br />
-			Without your love, darling<br />
-			Only you are the life among the dead<br />
-			<br />
-			All this time I can't believe I couldn't see<br />
-			Kept in the dark but you were there in front of me<br />
-			I've been sleeping a thousand years it seems<br />
-			Got to open my eyes to everything<br />
-			Without a thought, without a voice, without a soul<br />
-			Don't let me die here<br />
-			There must be something more<br />
-			Bring me to life<br />
-			<br />
-			(Wake me up)<br />
-			Wake me up inside<br />
-			(I can't wake up)<br />
-			Wake me up inside<br />
-			(Save me)<br />
-			Call my name and save me from the dark<br />
-			(Wake me up)<br />
-			Bid my blood to run<br />
-			(I can't wake up)<br />
-			Before I come undone<br />
-			(Save me)<br />
-			Save me from the nothing I've become<br />
-			<br />
-			Bring me to life<br />
-			(I've been living a lie, there's nothing inside)<br />
-			Bring me to life<br />
-			<a class="menu" href="#menu">return</a>
-			<div class="check"></div>
-		</div>
-		<audio id="myAudio" controls>
-			<source id="audioSource" src="" type="audio/mpeg" />
-			Your browser does not support the audio element.
-		</audio>
+		<footer>
+			<p>© 2023 SKON Downloads. For entertainment purposes only.</p>
+		</footer>
 	</body>
 </html>
